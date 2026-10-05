@@ -26,7 +26,7 @@ index.html / style.css / script.js / README.md / assets/ / docs/
 ```
 
 - **文章の単一の源は `index.html`**（2つのプロンプト本文もここ）。`content.js` / `config.js` は作らない
-- **設定値の単一の源は `script.js` 先頭の定数**: `LINE_URL`（LINE登録URL・空ならボタン非表示）と `OGP_IMAGE_URL`
+- **設定値の単一の源は `script.js` 先頭の定数**: `LINE_URL`（LINE登録URL・空ならボタン非表示）。OGPはクローラーがJSを実行しないため `index.html` の静的な meta タグで設定
 - コピーボタンは、画面表示のプロンプトと同じテキストを取得する（別管理にしない＝欠落防止）
 - 完了チェックの保存は localStorage（キー `jpposter:progress`）。使えない環境でも動くよう try/catch
 

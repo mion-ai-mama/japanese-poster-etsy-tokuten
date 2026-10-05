@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIで作って海外販売！日本風ポスター完全ガイド</title>
+<meta name="description" content="ChatGPTでの画像制作からEtsyへの出品まで、初心者向けに解説。コピペで使えるプロンプト付きの無料ガイドです。">
+<!-- OGP（SNSでシェアされたときの表示設定。画像はファーストビューのポスター） -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AIで作って海外販売！日本風ポスター完全ガイド">
+<meta property="og:description" content="ChatGPTでの画像制作からEtsyへの出品まで、初心者向けに解説。コピペで使えるプロンプト付き。">
+<meta property="og:url" content="https://mion-ai-mama.github.io/japanese-poster-etsy-tokuten/">
+<meta property="og:image" content="https://mion-ai-mama.github.io/japanese-poster-etsy-tokuten/assets/images/poster-sakura-fuji.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#d03f64">
+<link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<main id="main">
+
+  <!-- ============================================================
+       SECTION 01 ファーストビュー
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="ページ紹介">
+    <div class="hero__inner">
+      <p class="hero__label">コピペで使えるプロンプト付き</p>
+      <h1 class="hero__title">AIで作って海外販売！<br>日本風ポスター<br>完全ガイド</h1>
+      <p class="hero__subtitle">ChatGPTでの画像制作からEtsyへの出品まで、初心者向けに解説</p>
+      <ul class="hero__posters" aria-label="AIで作った日本風ポスターのサンプル">
+        <li><img src="assets/images/poster-sakura-fuji.jpg" alt="桜と富士山を描いた日本風ポスターのサンプル"></li>
+        <li><img src="assets/images/poster-ukiyoe-wave.jpg" alt="浮世絵風の波を描いたポスターのサンプル"></li>
+        <li><img src="assets/images/poster-goldfish.jpg" alt="和モダンな金魚を描いたポスターのサンプル"></li>
+      </ul>
+      <p class="hero__caption">※サンプルはAIで作成したオリジナルのイメージです</p>
+      <details class="toc">
+        <summary>目次を開く</summary>
+        <ol>
+          <li><a href="#about">海外販売とは？</a></li>
+          <li><a href="#simulator">売上シミュレーション</a></li>
+          <li><a href="#step1">STEP 1 リサーチ</a></li>
+          <li><a href="#step2">STEP 2 ChatGPTでポスター制作</a></li>
+          <li><a href="#step3">STEP 3 販売用データの準備</a></li>
+          <li><a href="#step4">STEP 4 英語の商品ページ</a></li>
+          <li><a href="#step5">STEP 5 Etsyに出品</a></li>
+          <li><a href="#after">出品後にやること</a></li>
+          <li><a href="#check">販売前の注意事項</a></li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 02 日本風ポスターの海外販売とは？
+  ============================================================ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="about-heading">日本風ポスターの<br>海外販売とは？</h2>
+      <div class="prose">
+        <p><strong>Etsy（エッツィー）</strong>という海外のマーケットプレイスで、オリジナルの日本風デザインを<strong>デジタル商品</strong>として販売する方法です。</p>
+      </div>
+      <ul class="card-grid">
+        <li class="card"><span class="card__num">1</span><p>在庫を持たなくていい</p></li>
+        <li class="card"><span class="card__num">2</span><p>梱包や発送がいらない</p></li>
+        <li class="card"><span class="card__num">3</span><p>自宅で制作から出品まで進められる</p></li>
+      </ul>
+      <div class="note-box">
+        <p class="note-box__label">先にお伝えしておくこと</p>
+        <p>出品には手数料などの費用がかかります。また、出品しても<strong>必ず売れるわけではありません</strong>。まずは「1作品作って出品してみる」ところから始めましょう。</p>
+        <details class="fees">
+          <summary>Etsyの主な手数料（2026年10月5日に公式ページで確認）</summary>
+          <ul>
+            <li>出品料：1出品につき0.20米ドル（4ヶ月で期限切れとなり、自動更新するとまた0.20米ドルかかります）</li>
+            <li>取引手数料：商品の表示価格に対して6.5％</li>
+            <li>外部サイト広告：Etsyの広告経由で売れた注文にのみ15％（年間売上が1万米ドル未満の間は、参加しない設定も可能）</li>
+            <li>為替の手数料：受け取り口座と違う通貨で出品した場合、2.5％</li>
+            <li>ショップ開設時：一回限りの設立手数料が必要になる場合があります（返金不可）</li>
+            <li>決済・入金まわりの手数料や、日本での消費税・税務の扱いは、<strong>要確認</strong>です。下の公式ページと、必要に応じて専門家に確認してください。</li>
+          </ul>
+          <p><a href="https://www.etsy.com/legal/fees" target="_blank" rel="noopener noreferrer">Etsy公式：手数料と支払いに関するポリシー</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 03 売上シミュレーション
+  ============================================================ -->
+  <section class="section section--soft" id="simulator" aria-labelledby="sim-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="sim-heading">月20万円の<br>売上シミュレーション</h2>
+      <p class="section__desc">数字を変えて、売上のイメージをつかみましょう</p>
+      <div class="sim">
+        <label class="sim__field" for="sim-price">商品の価格（円）
+          <input class="sim__input" id="sim-price" type="number" inputmode="numeric" min="0" max="1000000" step="100" value="4000">
+        </label>
+        <label class="sim__field" for="sim-count">月間の販売数（件）
+          <input class="sim__input" id="sim-count" type="number" inputmode="numeric" min="0" max="100000" step="1" value="50">
+        </label>
+        <div class="sim__result" aria-live="polite">
+          <p class="sim__label">月間の売上（仮定）</p>
+          <p class="sim__total"><span id="sim-total">200,000</span><span class="sim__unit">円</span></p>
+        </div>
+      </div>
+      <div class="note-box">
+        <p class="note-box__label">必ず読んでください</p>
+        <p>これは<strong>仮定の売上</strong>です。利益や収益を保証するものではありません。手数料・広告費・税金・為替の変動などは<strong>計算に含まれていません</strong>。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 04 STEP 1 リサーチ
+  ============================================================ -->
+  <section class="section" id="step1" aria-labelledby="step1-heading">
+    <div class="section__inner reveal">
+      <p class="step-label">STEP 1</p>
+      <h2 class="section__heading" id="step1-heading">売れそうなデザインを<br>リサーチしよう</h2>
+      <div class="prose">
+        <p>最初に、Etsyで今売られている商品を見てみましょう。ボタンを押すと、検索ワードがコピーできます。Etsyの検索ボックスに貼り付けてください。</p>
+      </div>
+      <ul class="kw-list">
+        <li class="kw"><span class="kw__text" id="kw-1">Japanese wall art</span><button class="btn btn--outline copy-btn" type="button" data-copy-target="kw-1"><span class="copy-btn__label">コピー</span><span class="copy-btn__done">コピーしました</span></button></li>
+        <li class="kw"><span class="kw__text" id="kw-2">Japanese printable art</span><button class="btn btn--outline copy-btn" type="button" data-copy-target="kw-2"><span class="copy-btn__label">コピー</span><span class="copy-btn__done">コピーしました</span></button></li>
+        <li class="kw"><span class="kw__text" id="kw-3">Japanese vintage poster</span><button class="btn btn--outline copy-btn" type="button" data-copy-target="kw-3"><span class="copy-btn__label">コピー</span><span class="copy-btn__done">コピーしました</span></button></li>
+        <li class="kw"><span class="kw__text" id="kw-4">Ukiyo-e wall art</span><button class="btn btn--outline copy-btn" type="button" data-copy-target="kw-4"><span class="copy-btn__label">コピー</span><span class="copy-btn__done">コピーしました</span></button></li>
+        <li class="kw"><span class="kw__text" id="kw-5">Japanese minimalist print</span><button class="btn btn--outline copy-btn" type="button" data-copy-target="kw-5"><span class="copy-btn__label">コピー</span><span class="copy-btn__done">コピーしました</span></button></li>
+      </ul>
+      <p class="copy-status" role="status" aria-live="polite"></p>
+      <h3 class="sub-heading">見るポイント</h3>
+      <ul class="check-list">
+        <li>商品の価格</li>
+        <li>デザインのテーマ</li>
+        <li>商品の構成（何枚入っているか、サイズなど）</li>
+        <li>商品画像の見せ方</li>
+        <li>レビューの内容</li>
+        <li>同じような商品の数</li>
+      </ul>
+      <div class="note-box">
+        <p class="note-box__label">ここだけ注意</p>
+        <p><strong>レビューの数は、売れた数ではありません。</strong>「レビューが多い＝たくさん売れている」とは言い切れないので、人気の目安のひとつとして見てください。</p>
+      </div>
+      <div class="prose"><p>見えてきた傾向から、「自分はどんなテーマ・雰囲気のポスターを作るか」を決めましょう。決まったら、次のSTEPへ進みます。</p></div>
+      <label class="done-check"><input type="checkbox" data-progress="step1"><span>STEP 1 完了</span></label>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 05 STEP 2 ChatGPTでポスター制作
+  ============================================================ -->
+  <section class="section section--soft" id="step2" aria-labelledby="step2-heading">
+    <div class="section__inner reveal">
+      <p class="step-label">STEP 2</p>
+      <h2 class="section__heading" id="step2-heading">ChatGPTで<br>ポスターを制作しよう</h2>
+      <div class="prose">
+        <p>この特典の中心です。デザインを自分で考えなくても大丈夫。下のプロンプトを貼り付けると、ChatGPTが質問してくれるので、選ぶだけでポスターが作れます。</p>
+      </div>
+      <div class="prompt-box">
+        <p class="prompt-box__title">ポスター制作プロンプト</p>
+        <pre class="prompt-box__text" id="prompt-poster">あなたは海外向けのデジタルアートを制作する、プロのアートディレクターです。
+
+Etsyでの販売を検討するため、日本の美しさを取り入れたオリジナルのポスターデザインを制作してください。
+
+まず、以下の項目について私に質問してください。
+
+1. メインテーマ
+   - 桜と富士山
+   - 浮世絵風の波
+   - 京都の街並み
+   - 金魚と水紋
+   - 鶴と朝日
+   - 招き猫
+   - 和風の花々
+   - その他
+
+2. デザインスタイル
+   - 和モダン
+   - レトロ
+   - ミニマル
+   - 水彩画
+   - 木版画風
+   - 墨絵風
+
+3. カラー
+   - 藍色と白
+   - 朱色と黒
+   - 桜色とベージュ
+   - 金色と深緑
+   - おまかせ
+
+4. 構図
+   - 縦長
+   - 横長
+   - 正方形
+
+5. デザインの雰囲気
+   - 落ち着いた
+   - 華やか
+   - 高級感
+   - かわいい
+   - 神秘的
+
+質問は1つずつ行い、回答を待ってから次へ進んでください。
+
+すべての回答が終わったら、選択内容を整理し、完成イメージを日本語で説明してください。
+
+私が承認したら、画像生成を行ってください。
+
+【制作条件】
+
+- オリジナルのデザインにする。
+- 特定の現存作家の作品を模倣しない。
+- 既存の商品画像を複製しない。
+- 不要な文字やロゴを入れない。
+- 印刷用途を想定した構図にする。
+- 画像の端に重要なモチーフを配置しない。
+- 可能な範囲で高品質な画像を生成する。
+
+画像が完成したら、改善できる部分があれば提案してください。</pre>
+        <button class="btn btn--primary copy-btn" type="button" data-copy-target="prompt-poster"><span class="copy-btn__label">プロンプトをコピーする</span><span class="copy-btn__done">コピーしました</span></button>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+        <a class="btn btn--outline btn--block" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く</a>
+      </div>
+      <h3 class="sub-heading">操作の流れ</h3>
+      <ol class="numbered-steps">
+        <li>上のボタンで、プロンプトをコピーする</li>
+        <li>ChatGPTを開く</li>
+        <li>コピーした文章を貼り付けて送信する</li>
+        <li>ChatGPTからの質問に、ひとつずつ答える</li>
+        <li>完成した画像を確認して、保存する</li>
+      </ol>
+      <div class="note-box">
+        <p class="note-box__label">知っておいてね</p>
+        <p>画像の生成には時間がかかることがあります。無料プランでは、作れる枚数に制限がかかる場合もあります（制限は変わることがあるため、ChatGPTの画面でご確認ください）。制作にかかる時間や枚数はお約束できません。</p>
+        <p>AIが作った画像の利用条件は、<a href="https://openai.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">OpenAIの利用規約</a>で必ず確認してください。商用利用できるかどうかをここで保証することはできません。</p>
+      </div>
+      <label class="done-check"><input type="checkbox" data-progress="step2"><span>STEP 2 完了</span></label>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA① （STEP 2の後・軽量版）
+  ============================================================ -->
+  <section class="section cta-mid" id="cta-mid" aria-labelledby="cta-mid-heading">
+    <div class="section__inner reveal">
+      <div class="cta-card cta-card--light">
+        <h2 class="cta-card__heading" id="cta-mid-heading">AIを使って、家でできることを<br>もっと増やしたい人へ</h2>
+        <div class="prose">
+          <p>今回のポスター販売は、AIを活用する方法のひとつです。</p>
+          <p>ほかにも、AIを仕事につなげる方法や、初心者さん向けの活用術を<strong class="cta-card__highlight">『AIマネタイズの教科書』</strong>にまとめています。無料で受け取れます。</p>
+        </div>
+        <a class="btn btn--primary btn--large" href="#cta" target="_blank" rel="noopener noreferrer" data-line-link data-cta="mid" hidden>『AIマネタイズの教科書』を見てみる</a>
+        <p class="cta-card__note">受け取りは任意です。このまま下に進んでも、最後まで読めます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 06 STEP 3 販売用データの準備
+  ============================================================ -->
+  <section class="section" id="step3" aria-labelledby="step3-heading">
+    <div class="section__inner reveal">
+      <p class="step-label">STEP 3</p>
+      <h2 class="section__heading" id="step3-heading">販売用のデータを<br>準備しよう</h2>
+      <div class="prose">
+        <p>ChatGPTで作った画像が、そのまま「印刷にも使える高画質データ」として売れるとは限りません。売る前に、次のことを確認しましょう。</p>
+      </div>
+      <h3 class="sub-heading">1. 画像の大きさ（ピクセル数）を確認する</h3>
+      <div class="prose">
+        <p>印刷するサイズが大きいほど、たくさんのピクセル数が必要です。たとえばA4サイズを300dpi（きれいに印刷できる細かさ）で印刷するには、<strong>約2480×3508px</strong>が必要です。</p>
+      </div>
+      <div class="table-wrap">
+        <table class="size-table">
+          <caption>300dpiで印刷する場合の目安（計算値）</caption>
+          <thead><tr><th scope="col">印刷サイズ</th><th scope="col">必要なピクセル数</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">A4（210×297mm）</th><td>2480×3508px</td></tr>
+            <tr><th scope="row">A3（297×420mm）</th><td>3508×4961px</td></tr>
+            <tr><th scope="row">8×10インチ</th><td>2400×3000px</td></tr>
+            <tr><th scope="row">11×14インチ</th><td>3300×4200px</td></tr>
+            <tr><th scope="row">16×20インチ</th><td>4800×6000px</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note-box">
+        <p class="note-box__label">ここが大事</p>
+        <p>画像をただ大きく引き伸ばしても、<strong>きれいになるとは限りません</strong>。ぼやけることもあります。作った画像のピクセル数が足りないときは、小さめのサイズで売る、作り直すなどを考えましょう。</p>
+      </div>
+      <h3 class="sub-heading">2. 縦横の比率（アスペクト比）を確認する</h3>
+      <div class="prose"><p>A4・A3は同じ比率ですが、インチサイズ（8×10など）は比率が違います。トリミングして形を整える必要がないか確認しましょう。</p></div>
+      <h3 class="sub-heading">3. ファイルの形式と、購入者向けの説明書</h3>
+      <div class="prose">
+        <p>JPGやPDFなどの形式で用意するのが一般的です。Etsyのデジタル商品は、<strong>1ファイル20MBまで、最大5ファイルまで</strong>アップロードできます（2026年10月5日に公式ヘルプで確認）。使える形式の一覧は、公式ヘルプでご確認ください。</p>
+        <p>購入した人が迷わないよう、「どのサイズで印刷できるか」「使い方」を書いた簡単な説明書も、ファイルに入れておくと親切です。</p>
+      </div>
+      <p><a href="https://help.etsy.com/hc/en-us/articles/115015628347-How-to-Manage-Your-Digital-Listings" target="_blank" rel="noopener noreferrer">Etsy公式ヘルプ：デジタル商品の管理</a></p>
+      <label class="done-check"><input type="checkbox" data-progress="step3"><span>STEP 3 完了</span></label>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 07 STEP 4 英語の商品ページ
+  ============================================================ -->
+  <section class="section section--soft" id="step4" aria-labelledby="step4-heading">
+    <div class="section__inner reveal">
+      <p class="step-label">STEP 4</p>
+      <h2 class="section__heading" id="step4-heading">英語の商品ページを<br>作ろう</h2>
+      <div class="prose">
+        <p>英語が苦手でも大丈夫です。ChatGPTに、商品名・説明文・検索タグを作ってもらいましょう。完成後は日本語訳も出してくれます。</p>
+      </div>
+      <div class="prompt-box">
+        <p class="prompt-box__title">商品ページ作成プロンプト</p>
+        <pre class="prompt-box__text" id="prompt-listing">あなたはEtsyの商品ページ制作をサポートする、海外向けECのマーケティング担当者です。
+
+私が制作した日本風ポスターを海外で販売するため、英語の商品ページを作成してください。
+
+以下の情報を私に確認してください。
+
+- ポスターのテーマ
+- デザインのスタイル
+- 主な色
+- ファイル形式
+- 印刷可能なサイズ
+- 商品に含まれるファイル数
+- 購入者に伝えたい特徴
+
+回答をもとに、以下を作成してください。
+
+1. Etsy向けの英語の商品タイトル
+2. 商品説明文
+3. 検索用タグの候補
+4. 商品の特徴を伝える短いキャッチコピー
+5. AIを使用して制作したことを伝える英語の説明文
+
+【条件】
+
+- 自然で読みやすい英語を使用する。
+- 検索キーワードを不自然に詰め込まない。
+- 商品の特徴を誇張しない。
+- 実際に含まれていないファイルやサイズを記載しない。
+- 物理的な商品ではなく、デジタルダウンロード商品であることを明記する。
+- Etsyの最新の文字数やタグの制限に従う。
+
+完成後は日本語訳も表示してください。</pre>
+        <button class="btn btn--primary copy-btn" type="button" data-copy-target="prompt-listing"><span class="copy-btn__label">プロンプトをコピーする</span><span class="copy-btn__done">コピーしました</span></button>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="note-box">
+        <p class="note-box__label">確認してから使ってね</p>
+        <p>AIが作った文章は、<strong>実際の商品と合っているか</strong>を必ず自分の目で確認してください。含まれていないファイルやサイズが書かれていたら、直しましょう。</p>
+        <p>Etsyの文字数の上限は、タイトルが140文字まで、タグが13個まで（1つ20文字まで）です（2026年10月5日に公式ヘルプで確認）。</p>
+      </div>
+      <label class="done-check"><input type="checkbox" data-progress="step4"><span>STEP 4 完了</span></label>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 08 STEP 5 Etsyに出品
+  ============================================================ -->
+  <section class="section" id="step5" aria-labelledby="step5-heading">
+    <div class="section__inner reveal">
+      <p class="step-label">STEP 5</p>
+      <h2 class="section__heading" id="step5-heading">Etsyに<br>出品しよう</h2>
+      <div class="prose"><p>いよいよ出品です。Etsyの公式サイトを開いて、一緒に進めましょう。</p></div>
+      <p class="center"><a class="btn btn--outline btn--large" href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer">Etsy公式サイトを開く</a></p>
+      <h3 class="sub-heading">出品までの流れ</h3>
+      <ol class="numbered-steps">
+        <li><strong>Etsyのアカウントを作り、ショップを開く。</strong>画面の案内に沿って進めます。本人確認が必要になる場合があります。</li>
+        <li><strong>出品の登録画面を開く。</strong>ショップの管理画面から、新しい出品を追加します。</li>
+        <li><strong>写真を追加する。</strong>1つの出品に、写真は最大20枚まで入れられます。完成したポスターの見せ方を工夫しましょう。</li>
+        <li><strong>「デジタルファイル（Digital files）」を選ぶ。</strong>「What type of item is it?」という質問に、デジタルファイルを選びます。</li>
+        <li><strong>商品名・説明文・タグ・価格を入力し、販売用のファイルをアップロードする。</strong>STEP 4で作った英語の文章を使います。ファイルは最大5つ（各20MBまで）です。デジタル商品は、サイズや色などのバリエーションを付けられません。</li>
+        <li><strong>AIを使って作ったことを、説明文に書く。</strong>EtsyのルールでAIを使った場合は、商品説明の中での開示が必要です。</li>
+        <li><strong>内容を確認して公開する。</strong>迷うときは「下書き保存（Save as Draft）」もできます。公開後、検索結果に表示されるまで最大48時間かかることがあります。</li>
+      </ol>
+      <div class="note-box">
+        <p class="note-box__label">画面の表記は変わることがあります</p>
+        <p>Etsyの画面や名前は、予告なく変わることがあります。ここに書いた表記と違うときは、公式ヘルプを見ながら進めてください。</p>
+        <p>
+          <a href="https://help.etsy.com/hc/en-us/articles/115015628707-How-to-Create-a-Listing" target="_blank" rel="noopener noreferrer">公式ヘルプ：出品の作り方</a><br>
+          <a href="https://help.etsy.com/hc/en-us/articles/115015672808-How-to-Open-an-Etsy-Shop" target="_blank" rel="noopener noreferrer">公式ヘルプ：ショップの開き方</a>
+        </p>
+      </div>
+      <label class="done-check"><input type="checkbox" data-progress="step5"><span>STEP 5 完了</span></label>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 09 出品後にやること
+  ============================================================ -->
+  <section class="section section--soft" id="after" aria-labelledby="after-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="after-heading">出品後に<br>やること</h2>
+      <div class="prose"><p>公開して終わりではありません。反応を見ながら、少しずつ良くしていきましょう。</p></div>
+      <ul class="check-list">
+        <li>商品が見られた回数</li>
+        <li>購入された状況</li>
+        <li>どんな検索ワードで見つけられているか</li>
+        <li>商品画像の見せ方</li>
+        <li>価格</li>
+        <li>デザインのバリエーション</li>
+      </ul>
+      <div class="note-box">
+        <p class="note-box__label">最初の目標</p>
+        <p>まずは<strong>1作品を作って、出品すること</strong>です。売れた実績がない段階で、たくさん出品するのはおすすめしません。1つずつ、様子を見ながら進めましょう。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 10 販売前の注意事項
+  ============================================================ -->
+  <section class="section" id="check" aria-labelledby="check-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="check-heading">販売前の<br>注意事項</h2>
+      <div class="prose"><p>出品の前に、ひとつずつチェックしましょう。チェックは、このブラウザに保存されます。</p></div>
+      <ul class="safety-list">
+        <li><label><input type="checkbox" data-progress="safe1"><span>AIサービスの利用規約を確認した</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe2"><span>Etsyの販売ポリシーを確認した</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe3"><span>AI使用に関する必要な開示を行った</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe4"><span>他の人の著作権や商標を侵害していない</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe5"><span>既存の作品をそのまま複製していない</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe6"><span>販売データの画質を確認した</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe7"><span>商品説明と実際の内容が一致している</span></label></li>
+        <li><label><input type="checkbox" data-progress="safe8"><span>手数料などの費用を確認した</span></label></li>
+      </ul>
+      <p class="progress-count" aria-live="polite">チェック済み <span id="safe-count">0</span> / 8</p>
+      <div class="note-box">
+        <p class="note-box__label">規約は公式で確認してね</p>
+        <p>
+          <a href="https://openai.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">OpenAI利用規約</a><br>
+          <a href="https://www.etsy.com/legal/creativity/" target="_blank" rel="noopener noreferrer">Etsy クリエイティビティスタンダード（AI使用の開示など）</a><br>
+          <a href="https://help.etsy.com/" target="_blank" rel="noopener noreferrer">Etsyヘルプ</a>
+        </p>
+        <p>Etsyでは、AIで作った作品は「セラーによるデザイン」として販売できますが、AIプロンプトの文例集そのものを商品にすることは認められていません（2026年10月5日に公式ページで確認）。規約や料金は変わることがあります。税金や法律の個別の判断は、専門家に確認してください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA② （ページ最下部・完全版）
+  ============================================================ -->
+  <section class="section section--soft" id="cta" aria-labelledby="cta-heading">
+    <div class="section__inner reveal">
+      <div class="cta-card">
+        <h2 class="cta-card__heading" id="cta-heading">40代からでも、<br>働き方は変えられる。</h2>
+        <div class="prose">
+          <p>私も40代からAIを使って、いろいろな仕事に挑戦しています。</p>
+          <p>
+            「AIを使って家で働きたい」<br>
+            「今より収入の柱を増やしたい」<br>
+            そんな方に向けて、AI初心者さんでもAIを仕事に活かす考え方や方法をまとめた<br>
+            <strong class="cta-card__highlight">『AIマネタイズの教科書』</strong><br>
+            も無料でご用意しています。
+          </p>
+        </div>
+        <img src="assets/images/cta-textbook-contents.png" alt="AIマネタイズの教科書 5大特典。1 いま一番始めやすいAIマネタイズ手法、2 ChatGPT収益化プロンプト3選、3 AIマネタイズ神テンプレート、4 マネタイズのための生成AIツール3選、5 AI×SNSで収益を生むリアル事例" class="cta-card__contents">
+        <div class="prose">
+          <p>
+            また、「何から始めたらいいのかわからない」「自分には何が向いているのか相談したい」<br>
+            という方に向けて、<strong class="cta-card__highlight">AI収益化サポート会</strong>も実施中です。<br>
+            個別でのご相談も、下のLINEから受け付けています。
+          </p>
+          <p>一緒に新しいことに挑戦していきましょう！</p>
+        </div>
+        <a class="cta-card__banner-link" href="#cta" target="_blank" rel="noopener noreferrer" aria-label="AIマネタイズの教科書を受け取る" data-line-link data-cta="bottom-banner" hidden>
+          <img src="assets/images/cta-banner.png" alt="無料プレゼント AIマネタイズ教科書。AIで働き方の選択肢を広げたい方へ。LINE登録はこちら" class="cta-card__banner-img">
+        </a>
+        <a class="btn btn--primary btn--large" href="#cta" target="_blank" rel="noopener noreferrer" data-line-link data-cta="bottom" hidden>
+          AIを仕事につなげる方法を見てみる
+        </a>
+        <p class="cta-card__note">LINEで無料で受け取れます</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© MION</p>
+  <p>このページの無断転載・複製はご遠慮ください。</p>
+</footer>
+
+<!-- 画面下に常時表示するLINEボタン（リンク先は script.js の LINE_URL） -->
+<div class="sticky-cta">
+  <a class="btn btn--primary sticky-cta__btn" href="#cta" target="_blank" rel="noopener noreferrer" data-line-link data-cta="sticky" hidden>
+    <svg class="sticky-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 2.5 1.4 4.7 3.6 6.2-.1.9-.5 2.4-1.400 3.500 0 0 2.700-.300 4.700-1.700.9.200 1.900.300 3.100.300 5.500 0 10-3.600 10-8S17.500 3 12 3z"/></svg>
+    <span>LINEに登録して「AIマネタイズの教科書」を受け取る</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
