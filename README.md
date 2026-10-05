@@ -37,7 +37,7 @@ python3 -m http.server 8000
 | ファイル | 場所 |
 |---|---|
 | `poster-sakura-fuji.jpg` | ファーストビュー（1枚目）／SNSシェア用の画像（OGP） |
-| `poster-ukiyoe-wave.jpg` | ファーストビュー（2枚目） |
+| `poster-kyoto-machiya.jpg` | ファーストビュー（2枚目） |
 | `poster-goldfish.jpg` | ファーストビュー（3枚目） |
 | `cta-banner.png` / `cta-textbook-contents.png` | CTA（教科書のバナー・目次） |
 
